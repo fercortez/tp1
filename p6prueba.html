@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Definimos las listas para las frutas
+        let frutasCitricas = [];
+        let frutasConPepitas = [];
+
+
+
+        // Solicitar al usuario que ingrese frutas
+
+
+        for (let i = 0; i < 5; i++) {
+            let nombreFruta = prompt("Ingresa el nombre de la fruta:");
+            let tipoFruta = prompt("Ingresa el tipo de fruta (cítrico/pepita):");
+            agregarFruta(nombreFruta, tipoFruta);
+        }
+        // Función para agregar frutas a las listas
+
+
+        function agregarFruta(fruta, tipo) {
+            if (tipo === 'citrico') {
+                frutasCitricas.push(fruta);
+            } else (tipo === 'pepita')
+            frutasConPepitas.push(fruta);
+        }
+
+
+        // Mostrar las frutas clasificadas
+
+
+
+        document.write("Frutas Citricas:\n" + frutasCitricas.join(", "));
+        document.write("<br>")
+        document.write("Frutas con Pepitas:\n" + frutasConPepitas.join(", "));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
